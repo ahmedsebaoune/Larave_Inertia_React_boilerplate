@@ -1,10 +1,14 @@
 import { Link } from "@inertiajs/inertia-react";
-const AppLayout = () => {
+import React, { useEffect } from 'react'
+const AppLayout = ({ children }) => {
+    // console.log(children)
+
     return (
         <div>
             <nav>
             <Link href="/about">click Me</Link>
             </nav>
+            <article>{children}</article>
             <div>
                     <iframe width="100%" height="166" scrolling="no" frameBorder="no" allow="autoplay"
                             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/75359457&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
